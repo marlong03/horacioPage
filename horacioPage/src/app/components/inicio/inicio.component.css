@@ -1,0 +1,157 @@
+.banner{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2f2f2f;
+}
+.banner__img {
+  width: 55%;
+  height: 100%;
+}
+.banner__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter:brightness(.9);
+}
+.banner__text{
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  padding:10px;
+}
+.banner__text h1{
+  font-size: 35px;
+  background-color: #fff;
+  padding:0px 10px;
+  color:black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #0a0a0a;
+  font-family: 'Montserrat', sans-serif;
+}
+.maquina-escribir{
+  background-color: transparent;
+  position: relative;
+}
+.maquina-escribir::after{
+  content: "";
+  background-color: #fff;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  animation:maquinaescribir 3s 1 steps(14);
+  animation-delay: 1.5s;
+}
+@keyframes maquinaescribir {
+  0%{
+    border-left:4px solid #000000;
+    width: 100%;
+  }
+  30%{
+    border-left:4px solid #000000;
+    width: 80%;
+  }
+  50%{
+    border-left:4px solid #000000;
+    width: 75%;
+  }
+  70%{
+    border-left:4px solid #000000;
+    width: 30%;
+  }
+  100%{
+    width: 0%;
+    border-left:3px solid transparent;
+  }
+}
+.banner__text h2{
+  font-size: 27px;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+}
+.container__numerales span{
+  padding:7px 10px;
+  color:white;
+}
+.container__numerales{
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
+.numeral__1{
+  cursor: pointer;
+}
+.numeral__2{
+  margin-top: 27px;
+  cursor: pointer;
+}
+.numeral__1 span{
+  background-color: blue;
+  border-right: 3px solid white;
+}
+.numeral__2 span{
+  background-color: red;
+  border-left: 3px solid white;
+  margin-left: -3px;
+}
+
+.promo-periodico .btnDescargaPeriodicoActual{
+    padding:30px 40px;
+    border-radius: 10px;
+    border: white;
+    background: blue;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.promo-periodico .btnDescargaPeriodicoActual h3{
+  max-width: 300px;
+}
+
+
+.promo-periodico{
+  padding:150px 0;
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.centrado img{
+  border: 2px solid white;
+  width: 30px;
+  padding:5px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.promo-periodico .centrado .btnDescargaPeriodicoActual{
+  box-shadow: 0px 0px 10px #646464;
+  cursor: pointer;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo-periodico .centrado .btnDescargaPeriodicoActual:hover{
+  background-color: rgb(24, 24, 184);
+  color:white;
+}
+.parallax{
+  background-attachment: fixed;
+}
