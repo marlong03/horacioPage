@@ -1,13 +1,46 @@
+.container__whatsapp{
+position: fixed;
+z-index: 50;
+bottom: 0;
+right: 0;
+padding:30px;
+}
+.container__whatsapp img{
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 100%;
+  border:2px solid transparent;
+  padding:5px;
+  cursor: pointer;
+}
 .banner{
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #2f2f2f;
+/*   background:url(../../../assets/imgs/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%; */
+  /* max-width: 1400px; */
+  max-height: 700px;
+  margin:auto;
+}
+.banner__maxmedia{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  max-height: 700px;
 }
 .banner__img {
-  width: 55%;
+  width: 52%;
   height: 100%;
 }
 .banner__img img{
@@ -25,6 +58,7 @@
   width: 45%;
   height: 100%;
   padding:10px;
+  margin:auto;
 }
 .banner__text h1{
   font-size: 35px;
@@ -38,15 +72,19 @@
 .maquina-escribir{
   background-color: transparent;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .maquina-escribir::after{
   content: "";
   background-color: #fff;
   right: 0;
-  height: 100%;
+  height: 80%;
   position: absolute;
   animation:maquinaescribir 3s 1 steps(14);
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 @keyframes maquinaescribir {
   0%{
@@ -123,7 +161,7 @@
   display: flex;
   text-align: center;
   width: 100%;
-  background-color: #f7f7f7;
+  background:linear-gradient(#ecebff,white) ;
 }
 
 .centrado{
@@ -149,9 +187,246 @@
   align-items: center;
 }
 .promo-periodico .centrado .btnDescargaPeriodicoActual:hover{
-  background-color: rgb(24, 24, 184);
+  background-color: #1818b8;
   color:white;
 }
-.parallax{
-  background-attachment: fixed;
+
+.quien-soy,.me-dedico{
+  font-family: 'Lato', sans-serif;
+  padding:30px 25px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  width: 45%;
+  position: relative;
+  z-index: 10;
+  text-align: center;
 }
+.quien-soy{
+  background-color: #eaeaea92;
+  color:black;
+}
+
+.me-dedico{
+  background-color: #2f2f2fec;
+  color:white;
+
+}
+.quien-soy h2,.me-dedico h2{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.mini__biografia{
+  display: flex;
+  justify-content: space-between;
+  padding:20px 20px;
+  position: relative;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.mini__biografia .circle,.notice__container .circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  filter: blur(90px);
+  position: absolute;
+
+}
+.mini__biografia .circle:nth-child(1),.notice__container .circle:nth-child(1){
+  background-color: #0000ff81;
+  top:80%;
+  right: 70%;
+}
+.mini__biografia .circle:nth-child(2),.notice__container .circle:nth-child(2){
+  background-color: red;
+  top:20%;
+  right: 10%;
+}
+/* .mini__biografia .circle:nth-child(3){
+  background-color: #0a0a0a;
+  top:150%;
+  right: 10%;
+} */
+.carrousel__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+}
+.carrousel__container input[type=button]{
+  width: 50px;
+  border:none;
+  box-shadow: 0px 0px 5px gray;
+  height: 50px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  position: relative;
+  z-index: 10;
+  border:3px solid white;
+}
+.carrousel__container input[type=button]:hover{
+  border:3px solid #e20000;
+}
+.carrousel__container input[type=button]:nth-child(1){
+  background-color: #2f2f2f;
+
+}
+.carrousel__container input[type=button]:nth-child(5){
+  background-color: #2f2f2f;
+}
+.carrousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.carrousel div {
+
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 10px;
+  margin:20px 10px;
+  position: relative;
+  z-index: 10;
+  width: 220px;
+  height: 220px;
+}
+
+.carrousel div:nth-child(2){
+  width: 20%;
+  height: 20%;
+}
+.carrousel div:nth-child(3){
+
+  width: 200px;
+  height: 200px;
+}
+.carrousel div:nth-child(4){
+  width: 20%;
+  height: 20%;
+}
+.carrousel div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
+
+}
+.notice__container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:30px;
+  max-width: 1400px;
+  margin: auto;
+}
+.notice__title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  padding:20px 0;
+}
+.container__cards--notice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card__notice{
+  background-color: #efefefab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  border-bottom: 20px solid #ffffff;
+  cursor: pointer;
+  margin:20px;
+  position: relative;
+  z-index: 10;
+
+}
+.card__notice:hover{
+  animation:scales .1s;
+  transform: scale(1.02);
+  background-color: #ffffff;
+
+
+}
+@keyframes scales {
+  from{
+  transform: scale(1);
+
+  }to{
+    transform: scale(1.02);
+
+  }
+}
+.card__notice--img{
+
+}
+.card__notice img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.card__notice h3{
+  padding-top: 10px;
+  font-family: 'Lato', sans-serif;
+  border-top: 3px solid black;
+}
+.card__notice p{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.notice__container .circle:nth-child(1){
+  background-color: #ff000074;
+  top:50%;
+  right: 50%;
+}
+/* .notice__container .circle:nth-child(2){
+  background-color: #ff000074;
+
+  top:100%;
+  right: 70%;
+} */
+.container__notice--btn{
+  display: flex;
+  justify-content: center;
+
+}
+.container__notice--btn input[type=button]{
+
+}
+.btnBlue{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding:15px 60px;
+  position: relative;
+  bottom: 0;
+  border-radius: 5px;
+  border:none;
+  box-shadow: 0px 0px 3px gray;
+  margin-top: 20px;
+  border:2px solid white;
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+.btnBlue:hover{
+  background-color: blue;
+  color:white;
+}
+

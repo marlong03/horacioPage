@@ -1,0 +1,70 @@
+.detalle__banner{
+  background-color: #3a3a3a;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+
+}
+.detalle__banner div{
+  width: 70%;
+  color:white;
+  max-width: 1400px;
+}
+.detalle__banner h2{
+  font-family: 'Montserrat', sans-serif;
+}
+.detalle__banner p{
+  font-family: 'lato', sans-serif;
+  margin:10px 0;
+  padding:10px 0;
+  border-bottom: 2px solid red;
+}
+.notice__content{
+  border-top: 3px solid #3a3a3a;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+.notice__introduction,.notice__content--text{
+  font-family: 'lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+  padding:10px 150px;
+}
+.notice__img{
+  display: flex;
+  justify-content: center;
+  margin:30px 0;
+}
+.notice__img img{
+  width: 70%;
+  height: 450px;
+  object-position: top;
+  object-fit: cover;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.btnBlue{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding:10px 17px;
+  position: relative;
+  bottom: 0;
+  margin:40px 0 0 0;
+  border-radius: 5px;
+  border:none;
+  box-shadow: 0px 0px 3px gray;
+  border:2px solid white;
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+.btnBlue:hover{
+  background-color: blue;
+  color:white;
+}

@@ -1,0 +1,36 @@
+<div class="div__modify">
+  <div class="content__title">
+    <h2>Banner</h2>
+  </div>
+  <div class="content__img">
+    <img src="{{urlImgBanner}}" alt="">
+  </div>
+  <div class="content__actions">
+    <form action="" (submit)="enviarForm($event,'imgBanner')">
+
+      <input type="file"  value="Modificar" class="btnBlue bg-blue"
+      (change)="seleccionarArchivo($event)" >
+      <input type="submit" value="Enviar" class="btnBlue">
+    </form>
+  </div>
+</div>
+<div class="div__modify">
+  <div class="content__title">
+    <h2>Galeria</h2>
+  </div>
+  <div class="galery__content">
+    <div class="galery__container--imgs">
+
+      <img *ngFor="let img of listaGaleriaImgs" src="{{img.url}}" alt="">
+    </div>
+    <div class="content__actions">
+      <form action="" (submit)="enviarForm($event,'imgsGalery')">
+
+        <input type="text" value="Total:{{listaGaleriaImgs.length}}" [disabled]="true">
+        <input type="file" value="Agregar" class="btnBlue bg-blue" (change)="seleccionarArchivo($event)" >
+        <input type="submit" value="Enviar" class="btnBlue">
+      </form>
+    </div>
+  </div>
+
+</div>

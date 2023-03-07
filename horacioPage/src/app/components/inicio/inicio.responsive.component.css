@@ -1,0 +1,152 @@
+@media (max-width:900px) {
+  .banner{
+  /*   background:url(../../../assets/imgs/banner1.jpg) ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner__text{
+    width: 100%;
+  }
+  .banner__text h2{
+    font-size: 27px;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 0px 10px #525252;
+  }
+  .banner__img{
+    width: 0;
+  }
+  .banner__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(.9);
+    display: none;
+  }
+
+}
+@media (max-width:800px) {
+
+
+  .notice__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+  }
+  .card__notice{
+    width: 40%;
+  }
+}
+@media (max-width:660px) {
+  .promo-periodico .btnDescargaPeriodicoActual{
+    width: 80%;
+}
+.centrado{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mini__biografia{
+  flex-direction: column;
+  align-items: center;
+}
+.quien-soy,.me-dedico{
+  width: 80%;
+}
+.mini__biografia .circle:nth-child(1),.notice__container .circle:nth-child(1){
+  top:80%;
+  right: 20%;
+}
+.mini__biografia .circle:nth-child(2),.notice__container .circle:nth-child(2){
+  background-color: red;
+  top:20%;
+  right: 50%;
+}
+.carrousel div:nth-child(4){
+  display: none;
+}
+.carrousel div:nth-child(3){
+
+  width: 250px;
+  height: 250px;
+}
+.container__cards--notice{
+  flex-direction: column;
+}
+.card__notice{
+  width: 80% !important;
+}
+}
+@media (max-width:523px){
+  .carrousel div:nth-child(2){
+    display: none;
+  }
+}
+@media (max-width:430px){
+  .carrousel div:nth-child(3){
+
+    width: 200px;
+    height: 200px;
+  }
+  .carrousel__container input[type=button]{
+    width: 38px !important;
+    height: 70px !important;
+  }
+  .banner__text h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+  }
+  .maquina-escribir::after{
+    content: "";
+    background-color: #fff;
+    right: 0;
+    height: 80%;
+    position: absolute;
+
+    animation-delay: .8s;
+  }
+  .container__numerales{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+  }
+  .numeral__2{
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:320px){
+  .carrousel__container{
+    display: none;
+  }
+  .btnBlue{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding:15px 20px;
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0px 0px 3px gray;
+    margin-top: 20px;
+    border:2px solid white;
+    background-color: #e7e7e7;
+    cursor: pointer;
+  }
+  .promo-periodico .btnDescargaPeriodicoActual h3{
+    font-size: 20px;
+  }
+  .promo-periodico .btnDescargaPeriodicoActual{
+    width: 90%;
+}
+
+}
+/* LIMITE 230PX */

@@ -1,17 +1,41 @@
 <header>
   <section class="header__container">
+    <div class="header__maxmedia">
+
     <div class="header__title">
         <h1>Horacio Edil</h1>
     </div>
-    <div class="header__menu">
+    <!-- <div class="header__menu">
       <ul>
-            <li>Inicio</li>
-            <li>Periodico</li>
-            <li>Historia</li>
-            <li>Fundación</li>
-            <li>Noticias</li>
-            <li>Agenda </li>
+        <li>Fundación</li>
+        <li>Historia</li>
+        <li>Agenda </li>
+        <li>Noticias</li>
+        <li>Periodico</li>
+        <li>Inicio</li>
       </ul>
+    </div> -->
+    <div class="main-header">
+
+      <nav id="nav" class="main-nav" >
+        <div class="nav-links" >
+          <ul>
+            <li routerLink="">Fundación</li>
+            <li routerLink="">Agenda </li>
+            <li routerLink="">Historia</li>
+            <li routerLink="/noticia">Noticias</li>
+            <li routerLink="/periodico">Periodico</li>
+            <li routerLink="">Inicio</li>
+          </ul>
+        </div>
+      </nav>
+      <button id="button-menu" class="button-menu" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </div>
+
   </section>
 </header>

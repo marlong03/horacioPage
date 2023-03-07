@@ -1,0 +1,19 @@
+<app-header></app-header>
+<app-banner-default [title]="titlePeriodico"></app-banner-default>
+
+<section class="periodico__container">
+  <div class="periodico__card" *ngFor="let periodico of listaPeriodicos">
+    <div class="periodico__card--img">
+        <img src="../../../assets/imgs/WhatsApp Image 2023-02-16 at 10.52.35 PM.jpeg" alt="">
+    </div>
+    <div class="card__dates">
+      <div>{{periodico.fecha}}</div>
+      <div>
+        <a href="{{periodico.url}}" target="_blank"><input type="button" value="Ver" class="btnBlue bg-blue"></a>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+<app-footer></app-footer>

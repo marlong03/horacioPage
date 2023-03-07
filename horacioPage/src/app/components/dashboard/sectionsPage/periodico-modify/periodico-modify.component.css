@@ -1,0 +1,200 @@
+.div__modify{
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  padding:20px 40px;
+  box-shadow: 0px 0px 10px #d6d6d6;
+  margin:30px auto;
+}
+.content__title h2{
+  border-bottom: 3px solid gray;
+  margin: 10px 0;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*  BANNER */
+.content__img {
+  margin: 20px 0;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+.content__img img{
+   width: 80%;
+   height: 200px;
+   object-fit: cover;
+}
+/*  */
+.periodico__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ /*  padding:30px 40px; */
+ /*  max-width: 1400px; */
+  margin: auto;
+}
+.periodico__card{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #a5a5a5;
+  margin:20px 10px;
+
+}
+.periodico__card img{
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin:10px;
+
+}
+
+
+.card__dates{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  font-family: 'lato', sans-serif;
+  font-size: 13px;
+  padding:5px 0 15px 0 ;
+}
+.card__dates div{
+
+}
+
+
+.btnBlue{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding:10px 17px;
+  position: relative;
+  bottom: 0;
+  margin:0 5px;
+  border-radius: 5px;
+  border:none;
+  box-shadow: 0px 0px 3px gray;
+  border:2px solid white;
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+.btnBlue:hover{
+  background-color: blue;
+  color:white;
+}
+.bg-blue{
+  background-color: blue;
+  color:white;
+
+}
+.bg-blue:hover{
+  background-color: #0000bb;
+
+}
+
+.container__periodico--new{
+  background-color: blue;
+  padding:10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'lato' sans-serif !;
+  width: 95%;
+}
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+
+.file-select::before {
+  background-color: #e7e7e7;
+  border: 2px solid white;
+  padding: 0 10px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar'; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  padding:10px 25px;
+  width: 200px;
+  display: inline-block;
+}
+
+#src-file1::before {
+  content: 'Seleccionar Periodico';
+}
+
+
+
+.periodico__section{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+@media (max-width:770px){
+  .container__periodico--new{
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-family: 'lato' sans-serif !;
+    width: 80%;
+  }
+  .container__periodico--new input{
+    margin:10px;
+  }
+  .file-select input[type="file"] {
+    padding:10px 0px;
+  }
+
+  .periodico__container{
+    padding:0;
+  }
+  .div__modify{
+  padding:20px 0px;
+  width: 100%;
+}
+.periodico__card{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #cecece;
+  margin:20px 10px;
+
+}
+.periodico__card img{
+  width: 240px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin:10px;
+
+}
+.btnBlue{
+  padding:10px;
+}
+}

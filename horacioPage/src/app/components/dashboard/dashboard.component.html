@@ -1,0 +1,45 @@
+<section class="dashboard">
+  <button class="dashboard__create--btn" id="btn__create">&plus;</button>
+  <div  class="create__slide" id="div__create">
+    <div class="create__slide--content">
+      <ul>
+        <li (click)="cambiarModuloDashboard('inicio')">Inicio</li>
+        <li (click)="cambiarModuloDashboard('noticia')">Noticias</li>
+        <li (click)="cambiarModuloDashboard('periodico')">Periodicos</li>
+
+      </ul>
+    </div>
+  </div>
+  <section class="dashboard__header">
+    <div class="dashboard__header--maxmedia">
+
+
+      <div class="moduloContainer"><h2>{{modulo}}</h2></div>
+      <div>
+        <div class="main-header">
+
+          <nav id="nav" class="main-nav" >
+            <div class="nav-links" >
+              <ul>
+
+                <li >Configuracion</li>
+                <li routerLink="">Cerrar Sesión</li>
+              </ul>
+            </div>
+          </nav>
+          <button id="button-menu" class="button-menu" > <!-- PARA CONFIGURACION DE ADMINISTRACION DE LA CUENTA -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="dashboard__content">
+    <app-inicio-modifiy  [style.display]="displayInicio"></app-inicio-modifiy>
+    <app-noticia-modify [style.display]="displayNoticia"></app-noticia-modify>
+    <app-periodico-modify [style.display]="displayPeriodico"></app-periodico-modify>
+  </section>
+
+</section>

@@ -1,0 +1,18 @@
+.periodico__banner{
+  background-color: #3d3d3d;
+  height: 100vh;
+  max-height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.periodico__banner h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+    color:white;
+    text-shadow: 0px 0px 10px #080808;
+    margin-top: 30px;
+    letter-spacing: 3px;
+}
