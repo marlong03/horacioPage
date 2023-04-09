@@ -13,9 +13,14 @@ export class PeriodicoComponent {
   getPeriodicos(){
   this.PeriodicoS.obtenerDocsPeriodicos('periodicosDocs').then(res =>{
         this.listaPeriodicos = res
-    })
+        console.log(this.listaPeriodicos[this.listaPeriodicos.length - 1]);
+        console.log();
 
+
+
+    })
   }
+
   ngOnInit(): void {
     this.getPeriodicos()
   }

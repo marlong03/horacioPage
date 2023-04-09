@@ -4,7 +4,7 @@
    <!--  <div class="container__whatsapp">
       <img src="../../../assets/imgs/redes/whatsapp.png" alt="">
     </div> -->
-    <section class="banner">
+    <section  class="banner">
       <div class="banner__maxmedia">
       <div class="banner__img">
         <img [src]="urlImgBanner" alt=""  id="imgBannerId">
@@ -30,56 +30,63 @@
       </div>
     </div>
     </section>
-    <div class="promo-periodico ">
+    <div   class="promo-periodico ">
       <!-- <img src="../../../assets/imgs/periodico.jpg" /> -->
       <div class="centrado">
+
+        <a   class="hipervinculoUltimoPeriodico"href="{{ultimoPeriodico.url}}" target="_blank">
         <button class="btnDescargaPeriodicoActual" >
-          <div>
-            <h3>Descarga Periodico del mes</h3>
-          </div>
-          <div>
-            <img src="../../../assets/imgs/periodico.png" alt="">
-          </div>
-        </button>
+            <div>
+              <h3>Descargar Periodico del mes</h3>
+            </div>
+            <div>
+              <img src="../../../assets/imgs/periodico.png"  alt="">
+            </div>
+          </button>
+        </a>
           </div>
     </div>
     <section class="mini__biografia">
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="circle"></div>
+      <section class="mini__biografia--content">
 
-    <div class="quien-soy">
-      <h2>¿Quien soy?</h2>
-      <p>Es Periodista y actual Edil de Usaquén. Su aspiración es dejar huella en la sociedad en la cual ha vivido 30 años. Quiere diseñar una plataforma que vincule y defienda al denunciante, fomentar las escuelas de formación deportiva, la realización de ferias de empleo y emprendimiento en Usaquén.</p>
-      <input type="button" value="Leer más" class="btnBlue">
-    </div>
-    <div class="me-dedico">
-      <div>
-        <div>
-          <h2>¿A que me dedico?</h2>
+        <div class="quien-soy">
+          <a><h2 >¿Quien soy?</h2></a>
+          <p>Es Periodista y actual Edil de Usaquén. Su aspiración es dejar huella en la sociedad en la cual ha vivido 30 años. Quiere diseñar una plataforma que vincule y defienda al denunciante, fomentar las escuelas de formación deportiva, la realización de ferias de empleo y emprendimiento en Usaquén.</p>
+          <input type="button" value="Conoce su historia" class="btnBlue" (click)="cambiarUrl('noticia/detalle')">
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis placeat amet, totam, nisi non libero vitae consequuntur neque animi ducimus doloremque excepturi similique sed aliquam iusto minima delectus. Doloremque quae, possimus officiis quasi quis commodi. Quidem explicabo reprehenderit sint temporibus officia! Ab obcaecati deserunt totam animi unde ratione cumque necessitatibus!</p>
-        <input type="button" value="Leer más" class="btnBlue">
-      </div>
+        <div class="mini-biografia__img">
+          <div>
+            <img src="../../../assets/imgs/fondoVoto.jpg" alt="">
 
-  <!--     <section class="container__cards_helps">
-        <div class="card__help">
-            <img src="../../assets/imgs/ayudaImgCard.jpg" alt="">
+          </div>
+
+
         </div>
-      </section> -->
-    </div>
+      </section>
 
   </section>
 
   <section class="carrousel__container">
-    <div class="carrousel">
-      <input type="button" value="<">
-      <div *ngFor="let imgGalery of listaImgsGalery">
+    <!-- <div class="carrousel"> -->
+      <!-- <div *ngFor="let imgGalery of listaImgsGalery">
         <img src="{{imgGalery.url}}" alt="">
-      </div>
+      </div> -->
 
-      <input type="button" value=">">
+    <!-- </div> -->
+    <div class="carrusel">
+      <div class="carrusel-items">
+        <div class="carrusel-item"*ngFor="let imgGalery of listaImgsGalery">
+          <img src="{{imgGalery.url}}" alt="" />
+        </div>
+
+      </div>
     </div>
+
+
+
   </section>
 
     <section class="notice__container">
@@ -89,7 +96,7 @@
       <div class="notice__title">
         <h2>Noticias</h2>
       </div>
-      <section class="container__cards--notice">
+      <section class="container__cards--notice" (click)="cambiarUrl('noticia/detalle')">
         <div class="card__notice">
           <div class="card__notice--img">
             <img src="https://firebasestorage.googleapis.com/v0/b/psicologiaconleila.appspot.com/o/pexels-edmond-dant%C3%A8s-7103129.jpg?alt=media&token=bdefaf7b-fada-4236-866b-bc3b637a925d" alt="">
@@ -100,7 +107,7 @@
           </div>
         </div>
 
-        <div class="card__notice">
+        <div class="card__notice" (click)="cambiarUrl('noticia/detalle')">
           <div class="card__notice--img">
             <img src="https://firebasestorage.googleapis.com/v0/b/psicologiaconleila.appspot.com/o/pexels-edmond-dant%C3%A8s-7103129.jpg?alt=media&token=bdefaf7b-fada-4236-866b-bc3b637a925d" alt="">
           </div>
@@ -110,7 +117,7 @@
           </div>
         </div>
 
-        <div class="card__notice">
+        <div class="card__notice" (click)="cambiarUrl('noticia/detalle')">
           <div class="card__notice--img">
             <img src="https://firebasestorage.googleapis.com/v0/b/psicologiaconleila.appspot.com/o/pexels-edmond-dant%C3%A8s-7103129.jpg?alt=media&token=bdefaf7b-fada-4236-866b-bc3b637a925d" alt="">
           </div>
@@ -122,8 +129,8 @@
 
 
       </section>
-      <div class="container__notice--btn">
-        <input type="button" value="Ver Más" class="btnBlue">
+      <div class="container__notice--btn" (click)="cambiarUrl('noticia')">
+        <input type="button" value="Conoce más " class="btnBlue">
       </div>
     </section>
 

@@ -15,15 +15,16 @@
 }
 .detalle__banner h2{
   font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
 }
 .detalle__banner p{
   font-family: 'lato', sans-serif;
   margin:10px 0;
   padding:10px 0;
-  border-bottom: 2px solid red;
+  border-bottom: 4px solid red;
 }
 .notice__content{
-  border-top: 3px solid #3a3a3a;
+
   margin-top: 15px;
   padding-top: 20px;
 }
@@ -35,6 +36,8 @@
   max-width: 1400px;
   margin: auto;
   padding:10px 150px;
+  font-size: 20px;
+  line-height: 30px;
 }
 .notice__img{
   display: flex;
@@ -52,7 +55,7 @@
 
 .btnBlue{
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   padding:10px 17px;
   position: relative;
   bottom: 0;
@@ -67,4 +70,22 @@
 .btnBlue:hover{
   background-color: blue;
   color:white;
+}
+@media (max-width:1000px) {
+
+  .detalle__banner h2{
+    font-size: 23px;
+  }
+  .notice__introduction,.notice__content--text{
+
+    padding:10px 30px ;
+  }
+  .notice__img img{
+    width: 90%;
+    height:90%;
+    object-position: top;
+    object-fit: cover;
+    max-width: 1400px;
+    margin: auto;
+  }
 }

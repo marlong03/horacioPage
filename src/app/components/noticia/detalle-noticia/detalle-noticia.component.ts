@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class DetalleNoticiaComponent {
   titleDetalleNoticia = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt non hic dolor rem neque asperiores odio, id libero distinctio!"
+  cambiarUrl(paramentro:string){
+    console.log(location.href);
+    location.href = location.href + paramentro
+   }
 }

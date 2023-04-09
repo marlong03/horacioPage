@@ -85,6 +85,16 @@
   .carrousel div:nth-child(2){
     display: none;
   }
+  .mini-biografia__img div img {
+    max-width: 280px;
+
+
+  }
+  .carrousel{
+
+    max-width: 300px !important;
+   /*  max-width: 500px; */
+  }
 }
 @media (max-width:430px){
   .carrousel div:nth-child(3){

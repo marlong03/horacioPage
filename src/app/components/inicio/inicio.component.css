@@ -61,6 +61,7 @@ padding:30px;
   margin:auto;
 }
 .banner__text h1{
+
   font-size: 35px;
   background-color: #fff;
   padding:0px 10px;
@@ -122,13 +123,14 @@ padding:30px;
   margin-top: 30px;
   justify-content: center;
   font-family: 'Lato', sans-serif;
+  font-size: 25px;
 }
 .numeral__1{
-  cursor: pointer;
+
 }
 .numeral__2{
   margin-top: 27px;
-  cursor: pointer;
+
 }
 .numeral__1 span{
   background-color: blue;
@@ -156,7 +158,7 @@ padding:30px;
 
 
 .promo-periodico{
-  padding:150px 0;
+  padding-top:300px;
   position: relative;
   display: flex;
   text-align: center;
@@ -190,40 +192,66 @@ padding:30px;
   background-color: #1818b8;
   color:white;
 }
+.hipervinculoUltimoPeriodico{
+  border: none;
+  color:white;
+  text-decoration: none;
+  outline-style: none;
+}
 
-.quien-soy,.me-dedico{
+.quien-soy{
   font-family: 'Lato', sans-serif;
-  padding:30px 25px;
-  margin: 20px;
+  padding:30px;
+  margin-right: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px gray;
-  width: 45%;
+
+  font-size: 20px;
   position: relative;
   z-index: 10;
   text-align: center;
+  width: 500px;
+  line-height: 35px;
 }
 .quien-soy{
   background-color: #eaeaea92;
   color:black;
 }
 
-.me-dedico{
-  background-color: #2f2f2fec;
-  color:white;
 
-}
 .quien-soy h2,.me-dedico h2{
    font-family: 'Montserrat', sans-serif;
    text-align: center;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
+   font-size: 40px;
+   border-bottom: 4px solid red;
+   padding-bottom: 20px;
 }
 .mini__biografia{
-  display: flex;
-  justify-content: space-between;
-  padding:20px 20px;
+
+  padding:0px 20px 0px 20px;
   position: relative;
   max-width: 1400px;
   margin: auto;
+}
+.mini-biografia__img div{
+  width: 50%;
+  position: relative;
+  z-index: 10;
+
+}
+.mini-biografia__img div img {
+  max-width: 450px;
+
+  border-radius: 10px;
+
+}
+.mini__biografia--content{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+
+
 }
 
 .mini__biografia .circle,.notice__container .circle{
@@ -250,10 +278,11 @@ padding:30px;
   right: 10%;
 } */
 .carrousel__container{
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1400px;
+
   margin: auto;
 }
 .carrousel__container input[type=button]{
@@ -283,22 +312,27 @@ padding:30px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow-x: hidden;
+  max-width: 600px;
+ /*  max-width: 500px; */
 }
 .carrousel div {
-
+  min-width: 200px;
+  max-height: 200px;
   box-shadow: 0px 0px 10px gray;
   border-radius: 10px;
   margin:20px 10px;
   position: relative;
   z-index: 10;
-  width: 220px;
+  width: 300px;
   height: 220px;
+
+
 }
 
 .carrousel div:nth-child(2){
-  width: 20%;
-  height: 20%;
+  width: 200px;
+  height: 200px;
 }
 .carrousel div:nth-child(3){
 
@@ -306,14 +340,16 @@ padding:30px;
   height: 200px;
 }
 .carrousel div:nth-child(4){
-  width: 20%;
-  height: 20%;
+  width: 200px;
+  height: 200px;
 }
 .carrousel div img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 10px;
+
 
 
 }
@@ -414,7 +450,7 @@ padding:30px;
 .btnBlue{
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  padding:15px 60px;
+  padding:15px 30px;
   position: relative;
   bottom: 0;
   border-radius: 5px;
@@ -430,3 +466,51 @@ padding:30px;
   color:white;
 }
 
+/* --------------------------------- */
+
+.carrousel__container{
+  max-width: 800px;
+}
+.carrusel {
+
+  display: flex;
+  align-items: center;
+  overflow-y:hidden;
+
+}
+
+.carrusel-items {
+  display: flex;
+  overflow-x: scroll;
+
+  padding: 50px 0px;
+}
+
+.carrusel-item {
+  min-width: 250px;
+  max-width: 250px;
+  height: 250px;
+  box-shadow: 0px 0px 5px gray;
+  cursor: pointer;
+  margin:10px;
+  border-radius: 10px;
+}
+
+.carrusel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
+
+}
+
+.carrusel-item:hover {
+  animation:scalar .3s;
+  transform: scale(1.15);
+}
+@keyframes scalar {
+  0%{ transform: scale(1);}
+  100%{ transform: scale(1.15);}
+
+}

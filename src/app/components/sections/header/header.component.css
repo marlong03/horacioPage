@@ -45,6 +45,9 @@
   justify-content: space-between;
   align-items: center;
 }
+ h1{
+  cursor: pointer;
+}
 .main-nav{
   position: fixed;
   top: 0;
@@ -81,12 +84,13 @@
   margin:35px 7px;
   font-size: 22px;
 }
-.nav-links li:nth-child(6){
+.nav-links li:nth-child(3){
   background-color: #454545;
   border-radius: 20px;
   padding:5px 15px !important;
   color:white;
 }
+
 .button-menu{
   z-index: 300;
   width: 35px;

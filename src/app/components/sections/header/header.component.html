@@ -1,14 +1,15 @@
-<header>
+<header >
   <section class="header__container">
     <div class="header__maxmedia">
 
     <div class="header__title">
-        <h1>Horacio Edil</h1>
+       <h1 (click)="cambiarUrl('')">Horacio Edil</h1>
     </div>
     <!-- <div class="header__menu">
       <ul>
-        <li>Fundación</li>
         <li>Historia</li>
+        //importantes
+        <li>Fundación</li>
         <li>Agenda </li>
         <li>Noticias</li>
         <li>Periodico</li>
@@ -20,12 +21,12 @@
       <nav id="nav" class="main-nav" >
         <div class="nav-links" >
           <ul>
-            <li routerLink="">Fundación</li>
+           <!--  <li routerLink="">Fundación</li>
             <li routerLink="">Agenda </li>
-            <li routerLink="">Historia</li>
-            <li routerLink="/noticia">Noticias</li>
-            <li routerLink="/periodico">Periodico</li>
-            <li routerLink="">Inicio</li>
+            <li routerLink="">Historia</li> -->
+            <li (click)="cambiarUrl('noticia')">Noticias</li>
+            <li (click)="cambiarUrl('periodico')">Periodicos</li>
+            <li (click)="cambiarUrl('')">Inicio</li>
           </ul>
         </div>
       </nav>
