@@ -11,7 +11,8 @@ export class HeaderComponent {
 
   }
   cambiarUrl(paramentro:string){
-    location.href = location.origin +"/"+ paramentro
+    console.log(location.href);
+    location.href = location.href +  paramentro
   }
 
   ngOnInit(): void {
