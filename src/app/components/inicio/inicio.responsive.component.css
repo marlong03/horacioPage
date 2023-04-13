@@ -43,6 +43,7 @@
 @media (max-width:660px) {
   .promo-periodico .btnDescargaPeriodicoActual{
     width: 80%;
+    margin:auto;
 }
 .centrado{
   width: 100%;
