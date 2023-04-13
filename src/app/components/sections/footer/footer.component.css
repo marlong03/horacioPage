@@ -1,9 +1,11 @@
 .footer__container{
   background-color: #2f2f2f;
   height: 250px;
-  margin-top: 40px;
+  padding: 20px;
+  /* width: 100%; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .contacto{
   display: flex;
@@ -11,6 +13,80 @@
   align-items: center;
 
 }
-.contacto div img{
-  width: 50px;
+form{
+  max-width: 300px;
 }
+.contacto div img{
+  width: 55px;
+  margin:5px 10px;
+
+}
+.contacto div img:hover{
+  animation:scale .3s ease;
+  transform: scale(1.2);
+}
+@keyframes scale {
+  0%{transform: scale(1);}
+  100%{transform: scale(1.2);}
+
+
+}
+.politicas input{
+  padding:10px 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 10px 5px rgb(33, 33, 33);
+    margin-right: 10px;
+    margin-top: 10px;
+    border:2px solid white;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.btnBlue{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding:10px 30px;
+  position: relative;
+  bottom: 0;
+  border-radius: 5px;
+  border:none;
+  box-shadow: 0px 0px 3px gray;
+  margin-top: 20px;
+  border:2px solid white;
+  background-color: #e7e7e7;
+  cursor: pointer;
+  float:right;
+}
+.btnBlue:hover{
+  background-color: blue;
+  color:white;
+}
+h3{
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 300px;
+  text-align: center;
+}
+@media (max-width:660px) {
+
+  .footer__container{
+    background-color: #2f2f2f;
+    height: 250px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contacto{
+    margin:20px;
+    cursor: pointer;
+  }
+  .footer__container{
+    height: auto;
+  }
+
+}
+

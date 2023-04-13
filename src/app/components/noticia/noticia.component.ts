@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class NoticiaComponent {
   titleNoticia = "Noticias"
   cambiarUrl(paramentro:string){
-    location.href = location.origin +"/"+ paramentro
+    let locationGithub = "https://marlong03.github.io/horacioPage/"
+    console.log(location.href);
+    /* location.href = location.href +  paramentro */
+    location.href = locationGithub +  paramentro
   }
 }

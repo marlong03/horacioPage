@@ -2,18 +2,22 @@
   <section class="footer__container">
     <div class="contacto">
       <div>
-        <img src="../../../../assets/imgs/redes/facebook.png" alt="">
+       <a href="https://www.instagram.com/horacioestradagil/"> <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" alt="instagram"></a>
       </div>
       <div>
-        <img src="../../../../assets/imgs/redes/instagram.png" alt="">
+        <a href="https://www.facebook.com/horacioestradagil/"> <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="facebook"></a>
       </div>
       <div>
-        <img src="../../../../assets/imgs/redes/twitter.png" alt="">
+        <a href="https://twitter.com/HORACIOESTRADA"> <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="twitter"></a>
       </div>
 
     </div>
     <div class="politicas">
-
+      <form  >
+        <h3>Subscribete para estar informado</h3>
+        <input type="email" name="emailCorreo" [(ngModel)]="emailCorreo" >
+        <button type="submit"  class="btnBlue" (click)="enviarCorreo()">Subscribirme</button>
+   </form>
     </div>
   </section>
 </footer>
